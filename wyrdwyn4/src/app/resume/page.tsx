@@ -33,7 +33,7 @@ const COMMITS = [
         author: "WyrdWyn4"
     },
     {
-        message: "Worked as Student Tutor at SiftMed",
+        message: "Worked as Student Tutor at EO Success Centre",
         date: "Sep 15, 2022",
         hash: "j0k1l2m",
         author: "WyrdWyn4"
@@ -69,7 +69,7 @@ const COMMITS = [
         author: "WyrdWyn4"
     },
     {
-        message: "Led Software Team at SDP-GP",
+        message: "Worked as Data Analytics and Project Control Intern at SDP-GP",
         date: "Sep 1, 2023",
         hash: "l2m3n4o",
         author: "WyrdWyn4"
@@ -848,16 +848,6 @@ export default function ResumePage() {
                                     <p className="text-xs text-[#8b949e]">You're receiving notifications because you're watching this repository.</p>
                                 </div>
                             </div>
-
-                            <div className="mt-6 pt-6 border-t border-[#30363d]">
-                                <div className="text-xs text-[#8b949e] flex items-center gap-2 hover:text-[#58a6ff] cursor-pointer">
-                                    <div className="w-4 h-4 rounded-full border border-[#30363d] overflow-hidden">
-                                        <img src="https://avatars.githubusercontent.com/u/66204156?v=4" className="w-full h-full" />
-                                    </div>
-                                    1 participant
-                                </div>
-                            </div>
-
                         </div>
                     )}
                 </div>

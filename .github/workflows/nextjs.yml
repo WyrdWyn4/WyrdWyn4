@@ -20,7 +20,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: ./
+        working-directory: .
 
     steps:
       - name: Checkout
@@ -49,6 +49,7 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+          # Points to package-lock.json in the root
           cache-dependency-path: ./package-lock.json
 
       - name: Setup Pages

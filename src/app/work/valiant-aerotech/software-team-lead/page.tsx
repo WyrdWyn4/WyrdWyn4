@@ -69,20 +69,20 @@ const TEAM = {
 const BASE_IMG_PATH = "/media/additional/valiant-aerotech/software-team-lead";
 
 const GALLERY_2026 = [
-    "2026-1.png",
-    "2026-2.png",
-    "2026-3.png"
+    "team-shot.png",
+    "team-presentation.png",
+    "group-shot.png"
 ];
 
 const GALLERY_2025 = [
     "snapshot.png",
-    "2025-2.png",
-    "2025-3.png",
-    "2025-5.png",
-    "2025-4.png",
-    "2025-6.png",
-    "2025-7.png",
-    "2025-8.png",
+    "drone-on-ground.png",
+    "team-chilling.png",
+    "team-stressed.png",
+    "drone-night-shot.png",
+    "team-water-test.png",
+    "drone-in-air.png",
+    "team-tweaking.png",
 ];
 
 const SOFTWARE_IMGS = {
@@ -238,9 +238,6 @@ export default function ValiantPage() {
                                     <Flame size={12} className="animate-pulse" />
                                     WILDFIRE RESPONSE UNIT
                                 </span>
-                                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-bold tracking-wider backdrop-blur-sm">
-                                    AEAC 2026 RFP BIDDER
-                                </span>
                             </div>
                             <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight drop-shadow-2xl">
                                 Software <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600">Team Lead</span>
@@ -342,7 +339,7 @@ export default function ValiantPage() {
 
                         <div className="space-y-4 pt-4">
                             <h4 className="text-sm font-bold text-gray-500 uppercase tracking-widest flex items-center gap-2">
-                                <Hammer size={16} /> Status: Fabrication & Prep
+                                <Hammer size={16} /> Status: Design & Prep
                             </h4>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 {GALLERY_2026.map((img, i) => (
@@ -681,52 +678,90 @@ export default function ValiantPage() {
                             </div>
                         </div>
                     </section>
-                    <section className="border-t border-white/10 pt-12">
-                        <div className="bg-gradient-to-r from-[#1a1a1a] to-[#0a0a0a] rounded-2xl border border-white/5 p-8 md:p-12 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 p-32 bg-orange-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+
+                    <section className="border-t border-white/10 pt-12 pb-12">
+                        <div className="bg-gradient-to-br from-[#1a1a1a] via-[#0a0a0a] to-black rounded-2xl border border-white/5 p-8 md:p-12 relative overflow-hidden">
+                            <div className="absolute top-0 right-0 p-40 bg-orange-500/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                            <div className="absolute bottom-0 left-0 p-32 bg-blue-500/5 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-bold text-white mb-4">Support Innovation</h3>
-                                <p className="text-gray-400 max-w-2xl mb-8">
-                                    Sponsoring Valiant Aerotech is an investment in the future of aerospace innovation.
-                                    Our systems are developed with real-world challenges in mind.
-                                </p>
-
-                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                    {[
-                                        { tier: "Bronze", price: "$500", color: "text-amber-700", border: "border-amber-900/30" },
-                                        { tier: "Silver", price: "$1000", color: "text-gray-400", border: "border-gray-500/30" },
-                                        { tier: "Gold", price: "$2000", color: "text-yellow-400", border: "border-yellow-500/30" },
-                                        { tier: "Diamond", price: "$4000", color: "text-cyan-400", border: "border-cyan-500/30" },
-                                    ].map((s) => (
-                                        <div key={s.tier} className={`bg-black/40 rounded-lg p-4 border ${s.border} text-center hover:bg-white/5 transition-colors`}>
-                                            <div className={`font-bold ${s.color} mb-1`}>{s.tier}</div>
-                                            <div className="text-sm text-gray-500">{s.price}</div>
-                                        </div>
-                                    ))}
+                                <div className="text-center mb-12">
+                                    <h3 className="text-3xl font-bold text-white mb-4">Partner With Us</h3>
+                                    <p className="text-gray-400 max-w-2xl mx-auto">
+                                        Sponsoring Valiant Aerotech is an investment in the future of aerospace innovation.
+                                        Help us build the next generation of wildfire response systems.
+                                    </p>
                                 </div>
-                                <div className="flex justify-center w-full mt-12 pb-8">
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                                    <div className="bg-[#0f0f0f]/80 border border-amber-900/30 rounded-xl p-6 hover:bg-white/5 transition-all group hover:-translate-y-2 duration-300 flex flex-col">
+                                        <div className="text-amber-700 font-bold text-xl mb-1 group-hover:text-amber-500 transition-colors">Bronze</div>
+                                        <div className="text-2xl font-bold text-white mb-6">$500</div>
+                                        <ul className="text-xs text-gray-400 space-y-3 mb-4 flex-grow">
+                                            <li className="flex gap-2"><span className="text-amber-700 font-bold">✓</span> Website Placement</li>
+                                            <li className="flex gap-2"><span className="text-amber-700 font-bold">✓</span> Social Media Shoutout</li>
+                                            <li className="flex gap-2"><span className="text-amber-700 font-bold">✓</span> Small Logo on Drone</li>
+                                            <li className="flex gap-2"><span className="text-amber-700 font-bold">✓</span> Certificate of Thanks</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="bg-[#0f0f0f]/80 border border-gray-500/30 rounded-xl p-6 hover:bg-white/5 transition-all group hover:-translate-y-2 duration-300 flex flex-col">
+                                        <div className="text-gray-400 font-bold text-xl mb-1 group-hover:text-gray-200 transition-colors">Silver</div>
+                                        <div className="text-2xl font-bold text-white mb-6">$1,000</div>
+                                        <ul className="text-xs text-gray-400 space-y-3 mb-4 flex-grow">
+                                            <li className="flex gap-2"><span className="text-gray-400 font-bold">✓</span> All Bronze Benefits</li>
+                                            <li className="flex gap-2"><span className="text-gray-400 font-bold">✓</span> 2 Dedicated Posts</li>
+                                            <li className="flex gap-2"><span className="text-gray-400 font-bold">✓</span> Medium Logo on Drone</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="bg-[#0f0f0f]/80 border border-yellow-500/30 rounded-xl p-6 hover:bg-white/5 transition-all group hover:-translate-y-2 duration-300 relative overflow-hidden flex flex-col shadow-lg shadow-yellow-900/10">
+                                        <div className="absolute top-0 right-0 bg-yellow-600/20 px-2 py-1 text-[9px] text-yellow-500 font-bold rounded-bl-lg border-b border-l border-yellow-500/20">POPULAR</div>
+                                        <div className="text-yellow-500 font-bold text-xl mb-1 group-hover:text-yellow-300 transition-colors">Gold</div>
+                                        <div className="text-2xl font-bold text-white mb-6">$2,000</div>
+                                        <ul className="text-xs text-gray-400 space-y-3 mb-4 flex-grow">
+                                            <li className="flex gap-2"><span className="text-yellow-500 font-bold">✓</span> All Silver Benefits</li>
+                                            <li className="flex gap-2"><span className="text-yellow-500 font-bold">✓</span> Event Program Profile</li>
+                                            <li className="flex gap-2"><span className="text-yellow-500 font-bold">✓</span> 30s Video Segment</li>
+                                            <li className="flex gap-2"><span className="text-yellow-500 font-bold">✓</span> Large Logo on Drone</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="bg-gradient-to-b from-[#0f0f0f] to-cyan-950/10 border border-cyan-500/30 rounded-xl p-6 hover:bg-white/5 transition-all group hover:-translate-y-2 duration-300 relative overflow-hidden flex flex-col shadow-lg shadow-cyan-900/20">
+                                        <div className="absolute top-0 right-0 bg-cyan-500/20 px-3 py-1 text-[9px] text-cyan-400 font-bold rounded-bl-lg border-b border-l border-cyan-500/20">EXCLUSIVE</div>
+                                        <div className="text-cyan-400 font-bold text-xl mb-1 group-hover:text-cyan-200 transition-colors">Diamond</div>
+                                        <div className="text-2xl font-bold text-white mb-6">$4,000</div>
+                                        <ul className="text-xs text-gray-400 space-y-3 mb-4 flex-grow">
+                                            <li className="flex gap-2"><span className="text-cyan-400 font-bold">✓</span> <span className="text-white">Title Sponsor Rights</span></li>
+                                            <li className="flex gap-2"><span className="text-cyan-400 font-bold">✓</span> Custom Drone Model</li>
+                                            <li className="flex gap-2"><span className="text-cyan-400 font-bold">✓</span> Full-Page Report Feature</li>
+                                            <li className="flex gap-2"><span className="text-cyan-400 font-bold">✓</span> Multiple Large Logos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col items-center justify-center w-full mt-12 pb-8">
                                     <a
                                         href={`${BASE_IMG_PATH}/sponsorship.pdf`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="relative group px-10 py-4 bg-gradient-to-br from-orange-950 to-red-950 border border-orange-500/30 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-orange-400 hover:shadow-[0_0_40px_rgba(234,88,12,0.5)]"
+                                        className="relative inline-flex items-center justify-center group px-6 md:px-10 py-4 bg-gradient-to-br from-orange-950 to-red-950 border border-orange-500/30 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-orange-400 hover:shadow-[0_0_40px_rgba(234,88,12,0.5)] mx-auto"
                                     >
                                         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-orange-600/20 via-red-500/20 to-orange-600/20 animate-fire-pulse" />
 
-                                        <span className="relative z-10 flex items-center gap-3 font-bold text-gray-200 group-hover:text-white tracking-widest uppercase text-sm transition-colors">
+                                        <span className="relative z-10 flex items-center justify-center gap-3 font-bold text-gray-200 group-hover:text-white tracking-widest uppercase text-xs md:text-sm transition-colors text-center">
                                             <Flame
-                                                className="text-orange-600 group-hover:text-yellow-400 transition-colors duration-300 drop-shadow-[0_0_8px_rgba(234,88,12,0.8)]"
+                                                className="text-orange-600 group-hover:text-yellow-400 transition-colors duration-300 drop-shadow-[0_0_8px_rgba(234,88,12,0.8)] shrink-0"
                                                 fill="currentColor"
-                                                size={24}
+                                                size={20}
                                             />
 
                                             <span>Sponsorship Package</span>
 
                                             <Flame
-                                                className="text-orange-600 group-hover:text-yellow-400 transition-colors duration-300 drop-shadow-[0_0_8px_rgba(234,88,12,0.8)]"
+                                                className="text-orange-600 group-hover:text-yellow-400 transition-colors duration-300 drop-shadow-[0_0_8px_rgba(234,88,12,0.8)] shrink-0"
                                                 fill="currentColor"
-                                                size={24}
+                                                size={20}
                                                 style={{ animationDelay: '0.1s' }}
                                             />
                                         </span>
